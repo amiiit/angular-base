@@ -1,0 +1,13 @@
+build/
+.idea/
+bower_components/
+node_modules
+vendor
+dist
+.tmp
+.DS_Store
+**/*/.DS_Store
+.bower
+*.iml
+*.log
+.grunt/
