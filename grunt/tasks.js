@@ -66,9 +66,6 @@ module.exports = {
         compile: {
             options: {
                 compress: false,
-                paths: [
-                    '<%= app_files.stylus_sheets %>'
-                ],
                 urlfunc: 'embedurl'
             },
             files: [
@@ -255,7 +252,7 @@ module.exports = {
             files: '<%= app_files.stylus %>',
             tasks: ['stylus:compile'],
             options: {
-                spawn: false
+                spawn: true
             }
         },
         scripts: {

@@ -11,7 +11,6 @@
     "d3": "~3.4.11",
     "lodash": "~2.4.1",
     "roboto-fontface": ">=0.2.0 <1.0.0",
-    "paper-dropdown-menu": "Polymer/paper-dropdown#~0.4.2",
     "ng-polymer-elements": "git@github.com:amitit/ng-polymer-elements.git#master"
   },
   "resolutions": {
