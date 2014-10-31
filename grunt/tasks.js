@@ -203,7 +203,10 @@ module.exports = {
         }
     },
     ngtemplates: {
-        'kb.mailing': {
+        'app': {
+            options: {
+                module: '<%= ng_app %>'
+            },
             src: 'app/**/*.tpl.html',
             dest: '<%= build_dir%>/<%= templates_file %>',
             cwd: 'src/'

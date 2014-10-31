@@ -1,4 +1,4 @@
-angular.module('kb.mailing')
+angular.module('<%= ngApp %>')
     .constant('AppConfig',
         <%= config %>
 );

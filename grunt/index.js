@@ -71,6 +71,7 @@ module.exports = function(grunt) {
         var configString = JSON.stringify(config);
         var configurationJsFile = grunt.template.process(template, {
             data: {
+                ngApp: grunt.config('ng_app'),
                 config: configString
             }
         });

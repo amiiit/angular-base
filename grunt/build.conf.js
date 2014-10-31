@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    xbackend_binary_url: function() {
+    backend_binary_url: function() {
         var os = require('os');
         var arch = os.arch().replace('x64', 'amd64');
 
@@ -10,12 +10,10 @@ module.exports = {
         + os.platform() + '_' + arch
         + '/frontend';
 
-        console.log('path!!!!', result);
         return result;
     }(),
-    backend_binary_url: 'http://downloads.voxelbrain.com/organization/krautbuster/kb-short-url/develop/current/darwin_amd64/frontend',
     backend_binary_path: 'backend/frontend',
-    backend_daemon_params: '-d shorturl -c url'.split(' '),
+    backend_daemon_params: '-l localhost:10000 -m mongodb://127.0.0.1/jobs -s http://www.example.com'.split(' '),
     ng_app: 'angularBase',
     build_dir: 'build',
     templates_file: 'src/templates.js',
