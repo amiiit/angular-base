@@ -67,8 +67,6 @@ module.exports = {
             options: {
                 compress: false,
                 paths: [
-                    'node_modules/grunt-contrib-stylus/node_modules',
-                    'vendor',
                     '<%= app_files.stylus_sheets %>'
                 ],
                 urlfunc: 'embedurl'
@@ -255,7 +253,7 @@ module.exports = {
         },
         stylus: {
             files: '<%= app_files.stylus %>',
-            tasks: ['stylus'],
+            tasks: ['stylus:compile'],
             options: {
                 spawn: false
             }
