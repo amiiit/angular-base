@@ -13,6 +13,5 @@ window.addEventListener('polymer-ready', function() {
     if (!ngApp) {
         console.warn('no ng-app');
     }
-    console.log('readt');
     angular.bootstrap(wrap(document), [ngApp]);
 });
