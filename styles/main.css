@@ -1,0 +1,31 @@
+html {
+  font-family: Roboto;
+  font-weight: lighter;
+  background: wallpaper;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #e6e6e6;
+  min-height: 400px;
+}
+
+header {
+  color: #fff;
+}
+paper-tab::shadow #ink {
+  color: #fff;
+}
+paper-tabs::shadow #selectionBar {
+  background: #fff;
+}
+paper-tabs {
+  background: #2a3ba7;
+  font-weight: inherit;
+  font-size: 1.2em;
+}
+core-toolbar {
+  background: #2a3ba7;
+}
+
