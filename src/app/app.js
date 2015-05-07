@@ -1,4 +1,4 @@
-angular.module('angularBase', ['ui.router', 'ng-polymer-elements'])
+angular.module('angularBase', ['ui.router'])
     .directive('appMain', function() {
         return {
             restrict: 'E',
@@ -7,11 +7,3 @@ angular.module('angularBase', ['ui.router', 'ng-polymer-elements'])
     })
     .controller('AppController', function($scope) {});
 ;
-
-window.addEventListener('polymer-ready', function() {
-    var ngApp = document.getElementById('ng-app').getAttribute('to-be-ng-app');
-    if (!ngApp) {
-        console.warn('no ng-app');
-    }
-    angular.bootstrap(wrap(document), [ngApp]);
-});
