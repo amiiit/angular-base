@@ -11,3 +11,4 @@ dist
 *.iml
 *.log
 .grunt/
+screenshots/

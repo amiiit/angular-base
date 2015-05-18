@@ -46,7 +46,7 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('reset-db', 'resets the database with test fixtures', [
-        'mongoimport'
+        //'mongoimport'
     ]);
 
     grunt.registerTask('start-backend', 'fetch and start the backend daemon', [

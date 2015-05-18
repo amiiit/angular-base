@@ -48,6 +48,7 @@
     "karma-jasmine": "^0.2.0",
     "load-grunt-tasks": "~0.4.0",
     "lodash": "^2.4.1",
+    "protractor-html-screenshot-reporter": "0.0.19",
     "time-grunt": "~0.3.1"
   },
   "engines": {
@@ -57,5 +58,9 @@
     {
       "type": "MIT",
       "url": "https://github.com/angular/angular.js/blob/master/LICENSE"
-  }]
+    }
+  ],
+  "scripts": {
+    "postinstall": "./node_modules/grunt-protractor-runner/scripts/webdriver-manager-update"
+  }
 }
