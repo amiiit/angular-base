@@ -9,7 +9,7 @@ angular.module('angularBase').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('app/content/app-content.tpl.html',
     "<div id='main'>\n" +
-    "\t\n" +
+    "    App section {{appSection}}\n" +
     "</div>"
   );
 
@@ -25,9 +25,9 @@ angular.module('angularBase').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('app/header/header-tabs.tpl.html',
     "<paper-tabs selected=\"0\">\n" +
-    "  <paper-tab>All</paper-tab>\n" +
-    "  <paper-tab>Recent</paper-tab>\n" +
-    "  <paper-tab>Archived</paper-tab>\n" +
+    "  <paper-tab ng-click=\"setState('all')\">All</paper-tab>\n" +
+    "  <paper-tab ng-click=\"setState('recent')\">Recent</paper-tab>\n" +
+    "  <paper-tab ng-click=\"setState('archived')\">Archived</paper-tab>\n" +
     "</paper-tabs>\n" +
     "\n"
   );
