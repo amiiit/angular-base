@@ -56,7 +56,7 @@ module.exports = {
         ],
         css: [
             'vendor/normalize.css/normalize.css',
-            'vendor/roboto-fontface/roboto-fontface.css'
+            'vendor/roboto-fontface/css/roboto-fontface.css'
         ],
         assets: [
             'vendor/d3/d3.js',
