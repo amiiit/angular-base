@@ -269,5 +269,19 @@ module.exports = {
                 spawn: false
             }
         }
+    },
+    jslint: {
+        all: {
+            src: ['Gruntfile.js', 'grunt/**/*.js', 'src/**/*.js', 'test/**/*.js'],
+            directives: {
+                predef: ['module', 'exports', 'require', 'console', 'angular' , 'browser']
+            }
+        },
+        app : {
+            src: '<%= app_files.js %>',
+            directives: {
+                predef: ['angular']
+            }
+        }
     }
 };
